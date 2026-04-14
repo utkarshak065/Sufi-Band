@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>!ttefaqq Band</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h1>!ttefaqq</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#members">Members</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<button class="explore-btn" onclick="scrollToSection('about')">Explore</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Us</h2>
+<p>
+!ttefaqq is a Sufi fusion band blending traditional and modern sounds,
+creating soulful musical experiences.
+</p>
+</section>
+
+<!-- MEMBERS -->
+<section id="members">
+<h2>Our Team</h2>
+
+<div class="grid">
+<div class="card" onclick="openModal('vocalist')">🎤 Vocalists</div>
+<div class="card" onclick="openModal('guitar')">🎸 Guitarists</div>
+<div class="card" onclick="openModal('percussion')">🥁 Percussion</div>
+<div class="card" onclick="openModal('keyboard')">🎹 Keyboard</div>
+</div>
+
+</section>
+
+<!-- MEMBER MODAL -->
+<div id="modal" class="modal">
+<div class="modal-box">
+<span onclick="closeModal()">✖ Close</span>
+<div id="modalContent"></div>
+</div>
+</div>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+<img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc">
+<img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3">
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
+<img src="https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+</div>
+
+</section>
+
+<!-- IMAGE POPUP MODAL -->
+<div id="imgModal" class="img-modal">
+<span class="close-img" onclick="closeImage()">✖</span>
+<img id="popupImg">
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Book Us</h2>
+
+<form onsubmit="sendMessage(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send</button>
+</form>
+
+<div class="contact-links">
+<a href="tel:+919045041615">📞 Call</a>
+<a href="mailto:ojhautkarsh917@gmail.com">📧 Email</a>
+<a href="https://wa.me/919045041615">💬 WhatsApp</a>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
