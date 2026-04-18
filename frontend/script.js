@@ -24,7 +24,7 @@ content = `
 
 <h3>Satyam Srivastava</h3>
 <p>Lead Vocalist | Sufi & Classical Singer</p>
-<a href="https://instagram.com/yourusername" target="_blank" class="insta-btn">
+<a href="https://www.instagram.com/__._satyammm_?igsh=MTdwcng5amVmZDRxdA==" target="_blank" class="insta-btn">
 📸 Instagram
 </a>
 
@@ -32,7 +32,7 @@ content = `
 
 <h3>Utkarsh Ojha</h3>
 <p>Bollywood Vocalist | Fusion Performer</p>
-<a href="https://instagram.com/yourusername" target="_blank" class="insta-btn">
+<a href="https://www.instagram.com/utkarsh_lyrics?igsh=bzFqbnEzbDd4MW9p" target="_blank" class="insta-btn">
 📸 Instagram
 </a>
 `;
@@ -45,7 +45,7 @@ content = `
 
 <h3>Sanidhya Goswami</h3>
 <p>Acoustic Lead Guitarist</p>
-<a href="https://instagram.com/yourusername" target="_blank" class="insta-btn">
+<a href="https://www.instagram.com/__sanidhy001__?igsh=bzZxOW9qZ3lhOXA4" target="_blank" class="insta-btn">
 📸 Instagram
 </a>
 
@@ -53,7 +53,7 @@ content = `
 
 <h3>Sutej Bir Rana</h3>
 <p>Electric Lead Guitarist</p>
-<a href="https://instagram.com/yourusername" target="_blank" class="insta-btn">
+<a href="https://www.instagram.com/sutz__riffs?igsh=MWV2YWdoNmRjbXczNg==" target="_blank" class="insta-btn">
 📸 Instagram
 </a>
 `;
@@ -64,10 +64,10 @@ if(type === "percussion"){
 content = `
 <h2>🥁 Percussion</h2>
 
-<h3>Satyam Srivastava</h3>
-<p>Cahon Specialist</p>
+<h3>Priyam Dutta</h3>
+<p>Cajon and Drums</p>
 
-<a href="https://instagram.com/yourusername" target="_blank" class="insta-btn">
+<a href="https://www.instagram.com/_.priyamm0?igsh=MTZhenRjZzZ0MmhkeQ==" target="_blank" class="insta-btn">
 📸 Instagram
 </a>
 `;
@@ -80,7 +80,7 @@ content = `
 
 <h3>Samarth Sharma</h3>
 <p>Ambient & Melody Creator</p>
-<a href="https://instagram.com/yourusername" target="_blank" class="insta-btn">
+<a href="https://www.instagram.com/samarth.musicc?igsh=MTdob29qZm12cnVhbg==" target="_blank" class="insta-btn">
 📸 Instagram
 </a>
 `;
@@ -129,4 +129,41 @@ document.getElementById("imgModal").addEventListener("click", function(e){
 if(e.target.id === "imgModal"){
 closeImage();
 }
+});
+/* ========================= */
+/* 🎬 VIDEO POPUP SYSTEM */
+/* ========================= */
+
+function openVideo(video){
+
+  const modal = document.getElementById("videoModal");
+  const popupVideo = document.getElementById("popupVideo");
+
+  // Set video source
+  popupVideo.src = video.querySelector("source").src;
+
+  // Show modal
+  modal.classList.add("show");
+
+  // Play video
+  popupVideo.play();
+}
+
+/* CLOSE VIDEO */
+function closeVideo(){
+  const modal = document.getElementById("videoModal");
+  const popupVideo = document.getElementById("popupVideo");
+
+  modal.classList.remove("show");
+
+  // Stop video
+  popupVideo.pause();
+  popupVideo.currentTime = 0;
+}
+
+/* CLICK OUTSIDE TO CLOSE */
+document.getElementById("videoModal").addEventListener("click", function(e){
+  if(e.target.id === "videoModal"){
+    closeVideo();
+  }
 });
