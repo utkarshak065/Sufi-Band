@@ -1,123 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>!ttefaqq Band</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>!ttefaqq — Sufi Fusion Band</title>
+  <meta name="description" content="!ttefaqq is a Sufi fusion band blending traditional and modern sounds, creating soulful musical experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- ==================== -->
 <!-- NAV -->
+<!-- ==================== -->
 <nav>
-<h1>!ttefaqq</h1>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#members">Members</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+  <a class="nav-logo" href="#">!ttefaqq</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#members">Members</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
+<!-- ==================== -->
 <!-- HERO -->
+<!-- ==================== -->
 <section class="hero">
-<button class="explore-btn" onclick="scrollToSection('about')">Explore</button>
+  <div class="hero-bg"></div>
+  <div class="hero-image"></div>
+  <div class="hero-rings">
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Sufi Fusion · Lucknow</p>
+    <h1 class="hero-title">!ttefaqq</h1>
+    <p class="hero-subtitle">Where tradition meets the transcendent</p>
+    <button class="explore-btn" onclick="scrollToSection('about')">Discover</button>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
+<!-- ==================== -->
 <!-- ABOUT -->
+<!-- ==================== -->
 <section id="about">
-<h2>About Us</h2>
-<p>
-!ttefaqq is a Sufi fusion band blending traditional and modern sounds,
-creating soulful musical experiences.
-</p>
+  <div class="section-header reveal">
+    <span class="section-label">Our Story</span>
+    <div class="ornament"><div class="ornament-diamond"></div></div>
+    <h2>About Us</h2>
+  </div>
+
+  <div class="about-inner reveal reveal-delay-1">
+    <blockquote class="about-quote">
+      !ttefaqq is a Sufi fusion band weaving the ancient mysticism of Sufi poetry with contemporary soundscapes — creating music that stirs the soul, bridges worlds, and echoes long after the last note fades.
+    </blockquote>
+    <div class="about-tags">
+      <span class="tag">Sufi Classical</span>
+      <span class="tag">Fusion</span>
+      <span class="tag">Qawwali</span>
+      <span class="tag">Bollywood Soul</span>
+      <span class="tag">Live Performances</span>
+    </div>
+  </div>
 </section>
 
+<!-- ==================== -->
 <!-- MEMBERS -->
+<!-- ==================== -->
 <section id="members">
-<h2>Our Team</h2>
+  <div class="section-header reveal">
+    <span class="section-label">The Ensemble</span>
+    <div class="ornament"><div class="ornament-diamond"></div></div>
+    <h2>Our Team</h2>
+  </div>
 
-<div class="grid">
-<div class="card" onclick="openModal('vocalist')">🎤 Vocalists</div>
-<div class="card" onclick="openModal('guitar')">🎸 Guitarists</div>
-<div class="card" onclick="openModal('percussion')">🥁 Percussion</div>
-<div class="card" onclick="openModal('keyboard')">🎹 Keyboard</div>
-</div>
-
+  <div class="grid">
+    <div class="card reveal reveal-delay-1" onclick="openModal('vocalist')">
+      <span class="card-icon">🎤</span>
+      Vocalists
+      <div class="card-shine"></div>
+    </div>
+    <div class="card reveal reveal-delay-2" onclick="openModal('guitar')">
+      <span class="card-icon">🎸</span>
+      Guitarists
+      <div class="card-shine"></div>
+    </div>
+    <div class="card reveal reveal-delay-3" onclick="openModal('percussion')">
+      <span class="card-icon">🥁</span>
+      Percussion
+      <div class="card-shine"></div>
+    </div>
+    <div class="card reveal reveal-delay-4" onclick="openModal('keyboard')">
+      <span class="card-icon">🎹</span>
+      Keyboard
+      <div class="card-shine"></div>
+    </div>
+  </div>
 </section>
 
+<!-- ==================== -->
 <!-- MEMBER MODAL -->
+<!-- ==================== -->
 <div id="modal" class="modal">
-<div class="modal-box">
-<span onclick="closeModal()">✖ Close</span>
-<div id="modalContent"></div>
-</div>
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕ &nbsp;Close</button>
+    <div id="modalContent"></div>
+  </div>
 </div>
 
-<!-- ===================== -->
-<!-- GALLERY SECTION -->
-<!-- ===================== -->
+<!-- ==================== -->
+<!-- GALLERY -->
+<!-- ==================== -->
 <section id="gallery">
-<h2>Gallery</h2>
+  <div class="section-header reveal">
+    <span class="section-label">Visual Journey</span>
+    <div class="ornament"><div class="ornament-diamond"></div></div>
+    <h2>Gallery</h2>
+  </div>
 
-<div class="gallery">
+  <div class="gallery-grid">
 
-  <!-- IMAGES -->
-  <img src="images/gallery1.jpeg">
-  <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc">
-  <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3">
-  <img src="images/gallery5.jpeg">
-  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
-  <img src="images/gallery4.jpeg">
-  <img src="images/gallery3.jpeg">
+    <!-- IMAGES -->
+    <div class="gallery-item reveal">
+      <img src="images/gallery1.jpeg" alt="Performance">
+    </div>
+    <div class="gallery-item reveal reveal-delay-1">
+      <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=600" alt="Music">
+    </div>
+    <div class="gallery-item reveal reveal-delay-2">
+      <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600" alt="Concert">
+    </div>
+    <div class="gallery-item reveal reveal-delay-3">
+      <img src="images/gallery5.jpeg" alt="Band">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600" alt="Stage">
+    </div>
+    <div class="gallery-item reveal reveal-delay-1">
+      <img src="images/gallery4.jpeg" alt="Performance">
+    </div>
+    <div class="gallery-item reveal reveal-delay-2">
+      <img src="images/gallery3.jpeg" alt="Band">
+    </div>
 
-  <!-- VIDEOS -->
-<video class="gallery-video" onclick="openVideo(this)" muted>
-  <source src="videos/performance1.mp4" type="video/mp4">
-</video>
+    <!-- VIDEOS -->
+    <div class="gallery-item reveal reveal-delay-3" onclick="openVideo('videos/performance1.mp4')">
+      <video muted loop preload="metadata">
+        <source src="videos/performance1.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-play"><div class="play-circle">▶</div></div>
+    </div>
 
-<video class="gallery-video" onclick="openVideo(this)" muted>
-  <source src="videos/performance2.mp4" type="video/mp4">
-</video>
-<video class="gallery-video" onclick="openVideo(this)" muted>
-  <source src="videos/performance3.mp4" type="video/mp4">
-</video>
+    <div class="gallery-item reveal" onclick="openVideo('videos/performance2.mp4')">
+      <video muted loop preload="metadata">
+        <source src="videos/performance2.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-play"><div class="play-circle">▶</div></div>
+    </div>
 
+    <div class="gallery-item reveal reveal-delay-1" onclick="openVideo('videos/performance3.mp4')">
+      <video muted loop preload="metadata">
+        <source src="videos/performance3.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-play"><div class="play-circle">▶</div></div>
+    </div>
 
-<!-- VIDEO POPUP MODAL -->
+  </div>
+</section>
+
+<!-- IMAGE POPUP -->
+<div id="imgModal" class="img-modal">
+  <span class="close-img" onclick="closeImage()">✕ Close</span>
+  <img id="popupImg" src="" alt="Gallery">
+</div>
+
+<!-- VIDEO POPUP -->
 <div id="videoModal" class="img-modal">
-  <span class="close-img" onclick="closeVideo()">✖</span>
+  <span class="close-img" onclick="closeVideo()">✕ Close</span>
   <video id="popupVideo" controls></video>
 </div>
-</div>
 
-<!-- IMAGE MODAL -->
-<div id="imgModal" class="img-modal">
-<span class="close-img" onclick="closeImage()">✖</span>
-<img id="popupImg">
-</div>
-
+<!-- ==================== -->
 <!-- CONTACT -->
+<!-- ==================== -->
 <section id="contact">
-<h2>Book Us</h2>
+  <div class="section-header reveal">
+    <span class="section-label">Work With Us</span>
+    <div class="ornament"><div class="ornament-diamond"></div></div>
+    <h2>Book Us</h2>
+  </div>
 
-<form onsubmit="sendMessage(event)">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message"></textarea>
-<button type="submit">Send</button>
-</form>
+  <div class="contact-inner">
+    <form onsubmit="sendMessage(event)" class="reveal reveal-delay-1">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Tell us about your event..."></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
 
-<div class="contact-links">
-<a href="tel:+919045041615">📞 Call</a>
-<a href="mailto:ojhautkarsh917@gmail.com">📧 Email</a>
-<a href="https://wa.me/919045041615">💬 WhatsApp</a>
-</div>
-
+    <div class="contact-links reveal reveal-delay-2">
+      <a class="contact-link" href="tel:+919045041615">📞 &nbsp;Call Us</a>
+      <a class="contact-link" href="mailto:ojhautkarsh917@gmail.com">✉ &nbsp;Email</a>
+      <a class="contact-link" href="https://wa.me/919045041615" target="_blank">💬 &nbsp;WhatsApp</a>
+    </div>
+  </div>
 </section>
 
-<script src="script.js"></script>
+<!-- ==================== -->
+<!-- FOOTER -->
+<!-- ==================== -->
+<footer>
+  <p>© 2025 <span>!ttefaqq</span> · All Rights Reserved · Crafted with <span>♥</span> in Lucknow</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
